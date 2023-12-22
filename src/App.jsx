@@ -4,7 +4,7 @@ import Erreur from "./pages/Erreur"
 import Logement from "./pages/Logement"
 import Header from "./component/Header"
 import Footer from "./component/Footer"
-import Locations from "./pages/locations"
+import Homepage from "./pages/Homepage"
 import annonce from './assets/annonce.json'
 
 function App () {
@@ -14,7 +14,7 @@ function App () {
         <>
           <Header/> 
           <Routes>
-            <Route index element={<Locations annonce={annonce} />} />
+            <Route index element={<Homepage annonce={annonce} />} />
             <Route path="/about" element={<About/>} />
             <Route path="/logement/:id" element={<Logement annonce={annonce} />} />
             <Route path="/*" element={<Erreur/>}/>
