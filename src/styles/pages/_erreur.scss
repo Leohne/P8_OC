@@ -1,0 +1,26 @@
+.div_erreur {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: $font;
+    color: $color-primary;
+}
+
+.h1_erreur {
+    max-width: 597px;
+    width: 100%;
+    font-size: 1300%;
+    text-align: center;
+}
+
+.p_erreur {
+    font-size: 250%;
+}
+
+.link_erreur {
+    margin: 150px;
+    &:visited {
+        color: $color-primary;
+    }
+}

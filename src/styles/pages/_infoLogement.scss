@@ -1,0 +1,116 @@
+.infoCard_contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $font;
+    color: $color-primary;
+    margin: 0 4vw;
+    &--size {
+        width: 70%;
+    }
+}
+
+.infoCard_PSposition {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.infoCard_name {
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 30%;
+    text-align: end;
+}
+
+.infoCard_picture {
+    object-fit: cover;
+    border-radius: 80px;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.infoCard_star {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fa-star {
+    margin: 25px 10px 0;
+}
+.star--Orange {
+    color: $color-primary;
+}
+
+.star--Grey {
+    color: $inactive;
+}
+
+.lc_contain {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 98%;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .infoCard_contain {
+        flex-direction: column;
+        &--size {
+            width: 100%;
+        }
+    }
+
+    .infoCard_tag {
+        width: 28%;
+        margin: 10px 5px 10px 0;
+        padding: 4px 2px;
+        font-size: 70%;
+    }
+
+    .infoCard_ProfilStar {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    .infoCard_PSposition {
+        justify-content: flex-end;
+    }
+
+    .infoCard_name {
+        margin: 5px;
+        padding-right: 5px;
+        text-align: end;
+        width: 40%;
+    }
+
+    .infoCard_picture {
+        height: 32px;
+        width: 32px;
+        margin-top: 5px;
+    }
+
+    .infoCard_star {
+        align-items: flex-end;
+        height: 30px;
+    }
+
+    .fa-star {
+        margin: 0;
+    }
+
+    .star--Orange {
+        margin: 0 5px;
+    }
+
+    .star--Grey {
+        margin: 0 5px;
+    }
+
+    .lc_contain {
+        flex-direction: column;
+        margin-top: 0;
+    }
+}

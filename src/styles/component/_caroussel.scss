@@ -1,0 +1,43 @@
+.imgId_contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+    font-family: $font;
+}
+
+.imgId_img {
+    position: relative;
+    width: 92%;
+    height: 415px;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 25px;
+}
+
+.imgId_previous {
+    left: 6%;
+    @include btn_ImgId
+}
+
+.imgId_next {
+    right: 6%;
+    @include btn_ImgId    
+}
+
+.imgId_count {
+    position: absolute;
+    bottom: 0vw;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .imgId_img {
+        height: 255px;
+    }
+    
+    .imgId_count {
+        display: none;
+    }
+}

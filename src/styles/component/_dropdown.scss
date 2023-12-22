@@ -1,0 +1,100 @@
+.dropdown_infoLogement {
+    width: 45%;
+    margin: 20px auto;
+    @include dropdown
+}
+
+.dropdown_about {
+    width: 80%;
+    margin: 20px auto;
+    @include dropdown
+}
+
+.dropdown_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $color-primary;
+    color: white;
+    border-radius: 15px;
+}
+
+
+
+.dropdown_margin {
+    margin: 15px 10px;
+}
+
+.fa-chevron-up {
+    cursor: pointer;
+    margin: 25px;
+}
+
+.fa-rotate-by {
+    --fa-rotate-angle: -180deg;
+    transition: transform 1s ease-out;
+}
+
+.fa-rotate-0 {
+    transition: transform 1s ease-out;
+}
+
+.dropdown_close {
+    position: absolute;
+    transition: all 1s ease-in-out;
+    transform: translateY(-20px);
+    top: -20px;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: $background;
+    color: $color-primary;
+}
+
+.dropdown_open {
+    position: relative;
+    transition: all 1s ease-in-out;
+    transform: translateY(20px);
+    visibility: visible;
+    max-height: 400px;
+    top: 20px;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: $background;
+    color: $color-primary;
+}
+
+.dropdown_p {
+    padding: 20px;
+    &--position {
+        position: relative;
+        top: -20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown_infoLogement {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .dropdown_title {
+        height: 30px;
+        border-radius: 5px;
+        font-size: small;
+    }
+
+    .dropdown_margin {
+        margin: 8px;
+    }
+
+    .fa-chevron-up {
+        margin: 15px;
+    }
+
+    .dropdown_anim {
+        font-size: small;
+    }
+}

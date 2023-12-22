@@ -1,0 +1,27 @@
+$color-primary: #FF6060;
+$background: #F6F6F6;
+$font: 'Montserrat'; 
+$inactive: #E3E3E3;
+
+
+@mixin imgDark {
+    filter: brightness(0.7);
+}
+
+@mixin btn_ImgId {
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    color: darken($color: $background, $amount: 4);
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+@mixin dropdown {
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+}
+
