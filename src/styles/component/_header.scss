@@ -3,6 +3,12 @@ body {
     max-width: 1440px;
 }
 
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .main_contain {
     display: flex;
     flex-direction: column;

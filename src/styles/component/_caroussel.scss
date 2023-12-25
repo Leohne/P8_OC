@@ -32,6 +32,10 @@
     color: white;
 }
 
+.hidden {
+    opacity: 0;
+  }
+
 @media screen and (max-width: 768px) {
     .imgId_img {
         height: 255px;

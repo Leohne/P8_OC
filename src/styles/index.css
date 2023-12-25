@@ -317,6 +317,12 @@ body {
   max-width: 1440px;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .main_contain {
   display: flex;
   flex-direction: column;
@@ -390,6 +396,7 @@ body {
 footer {
   width: 100%;
   text-align: center;
+  margin-top: auto;
 }
 
 .footer_div {
@@ -469,6 +476,10 @@ footer {
   position: absolute;
   bottom: 0vw;
   color: white;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
